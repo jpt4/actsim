@@ -5,4 +5,4 @@ echo "Building trace library..."
 (cd tracelib; make && make install)
 
 echo "Building actsim..."
-make depend && make && make install
+make CXX=mpic++ CC=mpicc depend && make && make install
